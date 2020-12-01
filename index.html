@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css"/>
+    <script src="js/main.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <h1 name="Intro">Welcome to the Weather App!</h1>
+        <section class="enterDestinationInfo">
+            <p name="getDestintionInfo">Please enter a city and state:</p>
+            <form id="currentCityInfo"> 
+                <label for="city">City</label>
+                <input id="city" type="text" size="40" autocomplete="off" placeholder="City" tabindex="0"/>    
+                <label for="state">State</label>
+                <input id="state" type="text" size="40" autocomplete="off" placeholder="State" tabindex="0"/>    
+                <button id="getWeather" class="weatherButton" title="Get Weather Data" aria-label="Get weather for the city and state provided" tabindex="0">Get Weather</button>    
+                <button id="setDefaultLocation" class="locationButton" title="Set as Default" aria-label="Set the current location as the default" tabindex="0">Set as Default</button>
+                
+            </form>
+            
+        </section>
+
+        
+        <section class="currentWeatherContainer">
+            <div class="currentWeather">
+                <h2 id="currentWeatherHeading" tabindex="0" aria-label="Current Weather">Current Weather</h2>
+               
+                <div class="currentCityWeather">
+                    <div id="currentCityName" type="text" id="1" tabindex="0" aria-label="Name of the selected city">Current City Name</div>
+                    <div id="currentCityDescription" id="2" tabindex="0" aria-label="Description for the selected city">Current City Desc</div>
+                    <div id="currentCityWeatherIcon" id="3" tabindex="0" aria-label="Current Weather Icon"></div>
+                    <div id="currentCityTemp" id="4" tabindex="0" aria-label="Temperature for the selected city">Current City Temp</div>
+                    <div id="currentCityFeelsLike" id="5" tabindex="0" aria-label="Feels like temperature for the selected city">Current City Feels Like<span>°F</span></div>
+                    
+                </div>
+
+                <div class="currentWeatherAdditional" tabindex="0" aria-label="Additional current weather details">
+                   
+                    <div id="currentCityHigh" id="1" tabindex="0" aria-label="High Temperature for the selected city">High:</div>
+                    <div id="currentCityLow" id="3" tabindex="0" aria-label="Low Temperature for the selected city">Low:</div>
+                    <div id="currentCityHumidity" id="4" tabindex="0" aria-label="Humidity for the selected city">Humidity:</div>
+
+                </div>
+                
+            </div>
+            <hr/>
+            <p id="confirmation" class="confirmation" aria-live="assertive"></p>
+        </section>
+        <section class="fiveDayForecastContainer">
+            
+                <h2 tabindex="0">5 Day Forecast</h2>
+                
+                <section id="fiveDayForecast" id="1" tabindex="0" aria-label="Five day forecast for the selected city">
+                    <ul>
+                        <li id="day1"></li>
+                        <li id=day1Icon></li>
+                        <li id="day1High"></li>
+                        <li id="day1Low"></li>
+                    </ul>
+                    <ul>
+                        <li id="day2"></li>
+                        <li id=day2Icon></li>
+                        <li id="day2High"></li>
+                        <li id="day2Low"></li>
+                    </ul>
+                    <ul>
+                        <li id="day3"></li>
+                        <li id=day3Icon></li>
+                        <li id="day3High"></li>
+                        <li id="day3Low"></li>
+                    </ul>
+                    <ul>
+                        <li id="day4"></li>
+                        <li id=day4Icon></li>
+                        <li id="day4High"></li>
+                        <li id="day4Low"></li>
+                    </ul>
+                    <ul>
+                        <li id="day5"></li>
+                        <li id=day5Icon></li>
+                        <li id="day5High"></li>
+                        <li id="day5Low"></li>
+                    </ul>
+                </section>
+        </section>
+        <!-- <section class="clearSearchContainer"></section>
+            
+                <button id="clearSearch" class="clearButton" title="clear data" aria-label="clear the search fields" tabindex="0">Clear</button>
+            
+        </section>   --> 
+
+        
+    </main>
+
+    
+    </body>
+</html>
