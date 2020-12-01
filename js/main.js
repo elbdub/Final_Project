@@ -1,4 +1,4 @@
-console.clear;
+//console.clear;
 
 const API_KEY = "39fc93c2a4e618396ba3aa95200af967";
 const URL = "https://api.openweathermap.org/data/2.5/weather?";
